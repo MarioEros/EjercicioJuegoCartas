@@ -197,8 +197,8 @@ public class Ventana extends javax.swing.JFrame {
         jpJugador.add(carta);
         jpJugador.revalidate();
         jlJugador.setText(Float.toString(jugador.devuelveSumaCartas()));
-        darResultados();
         jugando=true;
+        darResultados();
     }//GEN-LAST:event_jbPedirActionPerformed
 
     private void jbPlantarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbPlantarseActionPerformed
@@ -245,6 +245,7 @@ public class Ventana extends javax.swing.JFrame {
     public void plantarse() {
         jbPedir.setEnabled(false);
         jbPlantarse.setEnabled(false);
+        jugando=false;
     }
 
     public static void main(String args[]) {
